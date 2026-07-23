@@ -10,6 +10,7 @@ import {
   DribbbleIcon } from
 "lucide-react";
 import { BrandMark } from "./shared/BrandMark";
+import { Reveal } from "./shared/Reveal";
 
 const COLUMNS = [
 {
@@ -52,7 +53,7 @@ export function Footer() {
     <footer className="relative border-t border-line pt-16">
       <div className="mx-auto max-w-[1400px] px-6">
         <div className="grid grid-cols-2 gap-10 md:grid-cols-5">
-          <div className="col-span-2">
+          <Reveal className="col-span-2">
             <a href="#home" className="flex items-center gap-2.5" aria-label="WXS Labs home">
               <BrandMark className="h-12 w-12 shrink-0 rounded-full shadow-[0_8px_24px_-10px_rgba(181,40,227,0.8)]" decorative />
               <span className="font-display text-base font-bold tracking-tight text-ink">
@@ -78,10 +79,11 @@ export function Footer() {
 
               })}
             </div>
-          </div>
+          </Reveal>
 
-          {COLUMNS.map((col) =>
-          <div key={col.title}>
+          {COLUMNS.map((col, i) =>
+          <Reveal key={col.title} delay={0.1 + i * 0.1}>
+            <div>
               <h4 className="text-sm font-semibold text-ink">{col.title}</h4>
               <ul className="mt-4 space-y-2.5">
                 {col.links.map((link) =>
@@ -96,10 +98,12 @@ export function Footer() {
               )}
               </ul>
             </div>
+          </Reveal>
           )}
         </div>
 
-        <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-line py-8 sm:flex-row">
+        <Reveal delay={0.4}>
+          <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-line py-8 sm:flex-row">
           <p className="text-xs text-ink-mute">
             © {new Date().getFullYear()} WXS Labs. All rights reserved.
           </p>
@@ -112,6 +116,7 @@ export function Footer() {
             </a>
           </div>
         </div>
+        </Reveal>
       </div>
     </footer>);
 
