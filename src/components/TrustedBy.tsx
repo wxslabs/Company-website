@@ -16,7 +16,7 @@ const LOGOS = [
 export function TrustedBy() {
   return (
     <section className="relative border-y border-line py-14">
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-[1400px] px-6">
         <Reveal>
           <p className="text-center text-xs font-medium uppercase tracking-[0.25em] text-ink-mute">
             Trusted by forward-thinking teams worldwide

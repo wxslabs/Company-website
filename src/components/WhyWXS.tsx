@@ -43,7 +43,7 @@ const FEATURES: Feature[] = [{
 }];
 export function WhyWXS() {
   return <section id="why" className="relative py-28">
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-[1400px] px-6">
         <SectionHeading eyebrow="Why WXS Labs" title={<>
               Engineered for <span className="text-aurora">excellence</span>
             </>} description="Every product we ship is built on the same uncompromising foundation of performance, security, and scale." />

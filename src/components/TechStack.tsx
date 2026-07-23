@@ -23,7 +23,7 @@ const TECH = [
 export function TechStack() {
   return (
     <section className="relative py-28">
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-[1400px] px-6">
         <SectionHeading
           eyebrow="Technology Stack"
           title={

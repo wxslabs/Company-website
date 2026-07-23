@@ -35,7 +35,7 @@ const STEPS: Step[] = [{
 }];
 export function Process() {
   return <section className="relative py-28">
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-[1400px] px-6">
         <SectionHeading eyebrow="Development Process" title={<>
               A proven path to <span className="text-aurora">launch</span>
             </>} description="A transparent, battle-tested workflow that takes you from first idea to reliable, supported software." />

@@ -35,7 +35,7 @@ export function Navbar() {
       className="fixed inset-x-0 top-0 z-50 flex justify-center px-4 pt-4">
       
       <nav
-        className={`flex w-full max-w-6xl items-center justify-between rounded-2xl px-4 py-3 transition-all duration-500 sm:px-6 ${
+        className={`flex w-full max-w-[1400px] items-center justify-between rounded-2xl px-4 py-3 transition-all duration-500 sm:px-6 ${
         scrolled ? "glass shadow-[0_8px_40px_-12px_rgba(0,0,0,0.5)]" : "border border-transparent"}`
         }>
         

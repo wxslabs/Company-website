@@ -81,7 +81,7 @@ const PROJECTS = [
 export function FeaturedProjects() {
   return (
     <section id="projects" className="relative py-28">
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-[1400px] px-6">
         <SectionHeading
           eyebrow="Featured Projects"
           title={

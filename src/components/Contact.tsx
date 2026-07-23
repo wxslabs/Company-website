@@ -22,7 +22,7 @@ export function Contact() {
 
   return (
     <section id="contact" className="relative py-28">
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-[1400px] px-6">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
           <Reveal>
             <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-line glass px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-ink-soft">

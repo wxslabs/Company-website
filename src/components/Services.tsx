@@ -43,7 +43,7 @@ const SERVICES: Service[] = [{
 }];
 export function Services() {
   return <section id="services" className="relative py-28">
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-[1400px] px-6">
         <SectionHeading eyebrow="Services" title={<>
               From idea to <span className="text-aurora">impact</span>
             </>} description="Beyond our products, we partner with companies to design, build, and scale the software that powers their future." />

@@ -84,7 +84,7 @@ function ProductCard({
 }
 export function Products() {
   return <section id="products" className="relative py-28">
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-[1400px] px-6">
         <SectionHeading eyebrow="Products" title={<>
               Software for every <span className="text-aurora">business</span>
             </>} description="A complete suite of enterprise-grade management systems, each engineered for the way your industry actually works." />

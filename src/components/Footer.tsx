@@ -50,7 +50,7 @@ const SOCIALS = [
 export function Footer() {
   return (
     <footer className="relative border-t border-line pt-16">
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-[1400px] px-6">
         <div className="grid grid-cols-2 gap-10 md:grid-cols-5">
           <div className="col-span-2">
             <a href="#home" className="flex items-center gap-2.5" aria-label="WXS Labs home">
