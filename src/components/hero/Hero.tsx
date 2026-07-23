@@ -24,7 +24,7 @@ export function Hero() {
       id="home"
       className="relative flex min-h-screen items-center overflow-hidden pt-32 pb-20">
       
-      <div className="mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-12 px-6 lg:grid-cols-2">
+      <div className="mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-12 px-6 md:grid-cols-2">
         <motion.div variants={container} initial="hidden" animate="show">
           <motion.div variants={item}>
             <span className="inline-flex items-center gap-2 rounded-full border border-line glass px-4 py-1.5 text-xs font-medium text-ink-soft">
