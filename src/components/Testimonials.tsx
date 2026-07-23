@@ -2,7 +2,7 @@
 
 
 
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { QuoteIcon, ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
 import { SectionHeading } from "./shared/SectionHeading";
@@ -47,6 +47,13 @@ export function Testimonials() {
     setDir(d);
     setIndex((prev) => (prev + d + TESTIMONIALS.length) % TESTIMONIALS.length);
   }, []);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      paginate(1);
+    }, 6000);
+    return () => clearInterval(timer);
+  }, [paginate]);
 
   const t = TESTIMONIALS[index];
 
