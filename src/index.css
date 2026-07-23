@@ -1,0 +1,91 @@
+/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORTS — DO NOT DELETE THIS COMMENT */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap");
+
+/* CRITICAL: THE FOLLOWING TAILWIND IMPORTS MUST NEVER BE DELETED OR REORDERED — DO NOT DELETE THIS COMMENT */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
+
+:root {
+  /* dark theme (default) */
+  --surface: #0b0b0b;
+  --surface-2: #141114;
+  --ink: #f5f3f4;
+  --ink-soft: #b9b1b5;
+  --ink-mute: #7c7378;
+  --line: rgba(255, 255, 255, 0.08);
+  --glass: rgba(255, 255, 255, 0.04);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glow-a: rgba(148, 24, 215, 0.46);
+  --glow-b: rgba(181, 40, 227, 0.34);
+  --glow-c: rgba(229, 45, 145, 0.30);
+}
+.light {
+  --surface: #f8f6fa;
+  --surface-2: #ffffff;
+  --ink: #1d1022;
+  --ink-soft: #5d4b63;
+  --ink-mute: #927e96;
+  --line: rgba(38, 12, 46, 0.09);
+  --glass: rgba(255, 255, 255, 0.64);
+  --glass-border: rgba(38, 12, 46, 0.08);
+  --glow-a: rgba(148, 24, 215, 0.25);
+  --glow-b: rgba(181, 40, 227, 0.20);
+  --glow-c: rgba(229, 45, 145, 0.18);
+}
+* {
+  border-color: var(--line);
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--surface);
+  color: var(--ink);
+  font-family: "Inter", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+::selection {
+  background: rgba(181, 40, 227, 0.4);
+  color: #fff;
+}
+/* glass surface */
+.glass {
+  background: var(--glass);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+}
+/* text gradient */
+.text-aurora {
+  background: linear-gradient(120deg, #e52d91 0%, #b528e3 48%, #9418d7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+/* fine scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(181, 40, 227, 0.38);
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(181, 40, 227, 0.68);
+  background-clip: padding-box;
+}
+.grid-lines {
+  background-image: linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
